@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF3ECE47-6E99-4381-A795-05689B7FD435}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LogisticiansTool</RootNamespace>
+    <AssemblyName>LogisticiansTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\Documents\Coding Projects\LogisticiansTool\Deployment\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://thedrunkenempire.org/Downloads/LogisticiansTool/</InstallUrl>
+    <UpdateUrl>http://thedrunkenempire.org/Downloads/LogisticiansTool/</UpdateUrl>
+    <ProductName>LogisticiansTool</ProductName>
+    <PublisherName>Natalie Cruella</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>download.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>plastic_wrap.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B76A5A5C6CCF3A0BBD46758D7122554EFD1CC577</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LogisticiansTool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\packages\Entlib5.0.Caching\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\packages\Entlib5.0.Common\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\Enlib5.0.ServiceLocation\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Entlib5.0.Unity\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Entlib5.0.Unity.Interception\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data">
+      <HintPath>..\packages\Simple.Data.Core.0.18.3.1\lib\net40\Simple.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Ado">
+      <HintPath>..\packages\Simple.Data.Ado.0.18.3.1\lib\net40\Simple.Data.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Sqlite">
+      <HintPath>..\packages\Simple.Data.Sqlite.0.18.3.2\lib\net40\Simple.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.93.0\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildObjects.cs" />
+    <Compile Include="DataRepository.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CacheManager.cs" />
+    <Compile Include="Models\Route.cs" />
+    <Compile Include="Models\Algorithms.cs" />
+    <Compile Include="Models\APIKey.cs" />
+    <Compile Include="Models\ConfigValue.cs" />
+    <Compile Include="Models\Contract.cs" />
+    <Compile Include="Models\Ship.cs" />
+    <Compile Include="Models\SolarSystem.cs" />
+    <Compile Include="Models\Station.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewControls\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\AddAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewControls\AddAPI.Designer.cs">
+      <DependentUpon>AddAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ContractOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ContractOverview.Designer.cs">
+      <DependentUpon>ContractOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ContractView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ContractView.Designer.cs">
+      <DependentUpon>ContractView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\ManageAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewControls\ManageAPI.Designer.cs">
+      <DependentUpon>ManageAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\RoutePlanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewControls\RoutePlanner.Designer.cs">
+      <DependentUpon>RoutePlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControls\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewControls\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\AddAPI.resx">
+      <DependentUpon>AddAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ContractOverview.resx">
+      <DependentUpon>ContractOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ContractView.resx">
+      <DependentUpon>ContractView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\ManageAPI.resx">
+      <DependentUpon>ManageAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\RoutePlanner.resx">
+      <DependentUpon>RoutePlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControls\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="LogisticiansTool_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\ChangeLog.png" />
+    <None Include="Resources\28846.png" />
+    <None Include="Resources\28850.png" />
+    <None Include="Resources\28851.png" />
+    <None Include="Resources\28852.png" />
+    <Content Include="Resources\ChangeLog.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Fuzz_Crius_1.0-100038.sqlite" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\api.png" />
+    <None Include="Resources\api.ico" />
+    <None Include="Resources\exit.ico" />
+    <None Include="Resources\cache.png" />
+    <None Include="Resources\ErrorLog.png" />
+    <Content Include="Resources\Fuzz_Kr_1.0-98534.sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fuzz_Phoebe_0.9-106316.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\plastic_wrap.png" />
+    <None Include="Resources\plastic_wrap.ico" />
+    <None Include="Resources\cargo.png" />
+    <None Include="Resources\HeliumIsotopes.png" />
+    <None Include="Resources\HydrogenIsotopes.png" />
+    <None Include="Resources\NitrogenIsotopes.png" />
+    <None Include="Resources\OxygenIsotopes.png" />
+    <None Include="Resources\journey.png" />
+    <Content Include="plastic_wrap.ico" />
+    <None Include="Resources\QuestionMark.png" />
+    <None Include="Resources\QuestionMark.ico" />
+    <None Include="Resources\NatalieCruella.jpg" />
+    <None Include="Resources\waypoints.png" />
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

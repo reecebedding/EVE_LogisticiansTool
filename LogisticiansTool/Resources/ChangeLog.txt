@@ -1,0 +1,49 @@
+﻿Version 1.2.0.0
+	Removed splash screen
+	Added error handling around retrieving API data
+	Added collateral and reward values to the contract view
+	Added ability to filter contracts based on status
+
+Version 1.1.2.0
+	Added splash screen
+	Removed easter egg that bloated the package	
+	Improved logging message content / frequency
+
+Version 1.1.1.1
+	Changed default jump freighter skill to 1
+
+Version 1.1.1.0 -
+	Re-designed after feedback
+	Fixed bug that doesnt allow a route name to be added
+
+Version 1.1.0.2 -
+	Added easter goodness
+	Complete redesign for approval
+
+Version 1.1.0.1 -
+	Changed database name to reflect most recent Crius DB release
+	Fixed bug where mid points would be re-arranged
+
+Version 1.1.0.0 -
+	Database updated for Crius Patch values
+	Calculations for fuel consumption modified for the Crius patch
+	Calculation for fuel volume modified for the Crius patch	
+
+Version 1.0.7.2 -
+	Added ChangeLog
+	Added ErrorLog
+	Added feature to reset all saved API Keys
+	Added feature to reset all saved routes
+	
+Version 1.0.7.1 - 	
+	Fixed bug where calculating on the same route twice would reverse the route.
+
+Version 1.0.0.7 - 
+	Initial release for approval.
+
+
+
+
+
+
+				
